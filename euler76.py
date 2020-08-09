@@ -1,15 +1,12 @@
-def pentagonal_number(k):
-    return int(k*(3*k-1) / 2)
+#thanks Mathblog 
+import numpy as np 
+targ=150
+valu=[]
+valu=np.zeros(targ+1)
+valu[0]=1
+for i in range(1,targ+1):
+    for j in range(i,targ+1):
+        valu[j]+=valu[j-i]
+print(valu[-1]-1)
 
-def compute_partitions(goal):
-    partitions = [1]
-    for n in range(1,goal+1):
-        partitions.append(0)
-        for k in range(1,n+1):
-            coeff = (-1)**(k+1)
-            for t in [pentagonal_number(k), pentagonal_number(-k)]:
-                if (n-t) >= 0:
-                    partitions[n] = partitions[n] + coeff*partitions[n-t]
-    return partitions
-print(compute_partitions(100))
 # This code is contr
