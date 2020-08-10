@@ -14,5 +14,5 @@ def contador(a):
       #for b in range(1,10001):
       vetor.append(divisors(a))
       print(vetor)
-contador(220)
+contador(10001)
 

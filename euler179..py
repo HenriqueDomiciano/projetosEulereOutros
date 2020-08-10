@@ -10,7 +10,7 @@ u=1
 #soma=102162
 second_value=0
 soma=0
-for r in range(10,10001):
+for r in range(10,100001):
     actual_value=divisors(r)
     if actual_value==second_value:
         soma+=1
