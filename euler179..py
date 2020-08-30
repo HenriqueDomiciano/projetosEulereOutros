@@ -7,10 +7,10 @@ def divisors(n):
             b+=2
     return b
 u=1
-#soma=102162
+soma=102162
 second_value=0
 soma=0
-for r in range(10,100001):
+for r in range(1000001,10**7+1):
     actual_value=divisors(r)
     if actual_value==second_value:
         soma+=1

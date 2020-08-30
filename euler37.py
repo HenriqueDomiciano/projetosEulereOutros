@@ -1,4 +1,5 @@
 import time
+start_time=time.time()
 def sieve(n):
     is_prime = [True]*n
     is_prime[0] = False
@@ -33,3 +34,4 @@ for val in value:
     a=(is_truncable(val,value))
     valor+=a
 print(valor-2-3-5-7)
+print('%s segundos'%(time.time()-start_time))

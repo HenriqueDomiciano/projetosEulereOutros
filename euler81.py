@@ -2,7 +2,7 @@ import numpy as np
 
 matrix=[]
 
-with open(r'C:\Users\Dell\Desktop\p081_matrix.txt','r') as f:
+with open(r'C:\Users\Dell\Desktop\documentos\p081_matrix.txt','r') as f:
     content=f.readlines()
     for lines in content:
         reg=lines.split(',')

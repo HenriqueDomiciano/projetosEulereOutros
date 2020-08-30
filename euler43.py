@@ -8,8 +8,7 @@ for r in range (len(value)):
     if int(v)%2==0:
         continue
     else: 
-        if
-         int(v[7:10])%17==0:
+        if int(v[7:10])%17==0:
             if int (v[6:9])%13==0:
                 if int(v[5:8])%11==0:
                     if int(v[4:7])%7==0:

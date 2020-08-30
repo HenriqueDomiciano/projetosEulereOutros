@@ -47,15 +47,30 @@ def create_lists():
     return triangle,square,pent,hexag,hept,octa
 triangle,quadrado,pentagono,hexagono,eptagono,octogono=create_lists()
 
-'''            
+vector1=triangle
+vector2=quadrado
+vector3=pentagono
+vector4=hexagono
+vector5=eptagono
+vector6=octogono
 for v1 in vector1:
     for v2 in vector2:
+        if not(last_in_first(v1,v2)):
+            continue
         for v3 in vector3:
+            if not(last_in_first(v2,v3)):
+                continue
             for v4 in vector4:
+                if not(last_in_first(v3,v4)):
+                    continue
                 for v5 in vector5:
+                    if not(last_in_first(v4,v5)):
+                        continue
                     for v6 in vector6 :
-                        if last_in_first(v1,v2) and last_in_first(v2,v3) and last_in_first(v3,v4) and last_in_first(v4,v5) and last_in_first(v5,v6):
+                        if not(last_in_first(v5,v6)) and (not(last_in_first(v6,v1))):
+                            continue
+                        else:
                             val=[v1,v2,v3,v4,v5,v6]
                             print(val)
-'''
-#não encontro o erro
+                            print(sum(val))
+                            # ommproblema e a sequencia.
