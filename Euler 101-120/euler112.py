@@ -27,4 +27,4 @@ bon=0
 for r in range(100,10**100):
     if is_bouncy(r):
         bon+=1
-    print(bon)
+print(bon)

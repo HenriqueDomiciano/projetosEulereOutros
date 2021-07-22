@@ -2,7 +2,7 @@ import time
 start_time=time.time()
 vector=[]
 new_content,new_content1=[],[]
-with open(r'C:\Users\Dell\Desktop\p099_base_exp.txt','r') as f:
+with open(r'C:\Users\Dell\Desktop\documentos\p099_base_exp.txt','r') as f:
         content=f.readlines()
         for v in content:
             v= v.rstrip("\n")

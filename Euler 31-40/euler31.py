@@ -1,3 +1,4 @@
+
 def number_of_possibilites(test):
     val=0
     for r in range(test+1,0,-200):

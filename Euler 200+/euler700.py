@@ -7,6 +7,8 @@ while(True):
     else:
         r=r+1
     value=1504170715041707*r % 4503599627370517
+    
     if value<array1[-1]:
         array1.append(value)
-        print(sum(array1),'----',array1[-1],'-----',r)
+        print(r,'-------------',value)
+        #print(sum(array1),'----',array1[-1],'-----',r)

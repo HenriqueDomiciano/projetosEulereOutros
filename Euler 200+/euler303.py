@@ -8,11 +8,17 @@ def f(n):
     a=1
     while True:
         c=list(str(n*a))
-        if(c.count('1')+c.count('2')+c.count('0'))==len(c):
+        for val in c:
+            if int(val)<3:
+                test=True 
+            else:
+                test=False
+                break
+        if test:
             return a
         a+=1
 val=0
-for r in range(1,10001):
+for r in range(20,31):
+    print(f(r))
     val+=(f(r))
-    print(val,'------------',r)
 print(val)

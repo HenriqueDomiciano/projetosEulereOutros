@@ -7,7 +7,7 @@ def calculate_area(x1,y1,x2,y2,x3,y3):
 def calculate_area_origin(x1,y1,x2,y2):
     return x1*y2-(y1*x2)
 
-with open(r'C:\Users\Dell\Desktop\p102_triangles.txt','r') as f:
+with open(r'C:\Users\Dell\Desktop\documentos\p102_triangles.txt','r') as f:
     vector=f.readlines()
 
 count=0
